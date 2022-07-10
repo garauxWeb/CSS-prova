@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/test.css">
+</head>
+<body>
+
+<header>
+    <div class="top-header">
+        <div class="top-header-wrapper">
+            <div>Brand</div>
+            <div> Right menu</div>
+        </div>
+
+        <div class="top-header-sub">
+            <div>Logo</div>
+        </div>
+    </div>
+</header>
+
+<section class="letter">
+    <div class="container">
+        <div class="container-middle-row">
+            <div class="container-half-row">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut laborum maxime nam praesentium
+                    quidem.
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolores excepturi ipsum iste sapiente
+                    sed! Aliquam, architecto dolor doloribus eaque enim laborum, numquam optio porro quae, quia
+                    quibusdam reprehenderit rerum? Asperiores assumenda distinctio dolore esse, eum eveniet ex facilis
+                    impedit libero modi, mollitia nam obcaecati, quis saepe sed tempore veniam voluptate. Accusamus
+                    excepturi ipsam ullam ut veritatis! Aut consequuntur eaque eveniet impedit ipsam itaque, minima
+                    minus modi mollitia nemo, officiis praesentium similique sunt veniam voluptas. Dolor dolorum in
+                    ipsum temporibus!
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<section>
+    <div class="container">
+        <div class="container-middle-row">
+            <div class="container-middle-row__col">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut laborum maxime nam praesentium
+                    quidem.
+                </h3>
+            </div>
+        </div>
+
+        <div class="container-middle-row">
+            <div class="container-middle-row__col">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dicta ea exercitationem
+                    facere fuga itaque iure laudantium, molestiae nostrum odio perspiciatis quam quia, repellendus sequi
+                    unde veniam! Ipsam recusandae reiciendis rem. Asperiores consequuntur explicabo minima officia
+                    possimus tempore, totam veniam? Ab ea eaque enim inventore perspiciatis provident ratione unde.</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam doloribus excepturi ipsa iusto
+                    numquam, porro quis tempora totam? Ab alias animi ducimus error ex officiis omnis, rerum similique.
+                    Asperiores autem blanditiis dignissimos eos id incidunt, non veritatis. Ab aliquam, aliquid at
+                    beatae, expedita fuga fugiat incidunt modi nostrum possimus qui quidem soluta voluptate! Animi
+                    aspernatur commodi culpa dolore explicabo fuga id perferendis sed, velit. Commodi cupiditate sed
+                    sit.
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<div id="sustainability"></div>
+<div id="dividend"></div>
+
+
+<section class="signs">
+    <div class="container">
+        <div class="container-middle-row">
+            <div class="container-middle-row__col">
+                <div class="signs-wrapper">
+                    <div>
+                        <p>Veit de Maddalena</p>
+                        <p>Präsident des Verwaltungsrats</p>
+                    </div>
+                    <div>
+                        <p>André Rüegg</p>
+                        <p>André Rüegg</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="container">
+        <div class="footer">
+            <div>
+                Bellevue Group AG
+                Seestrasse 16
+                8700 Küsnacht
+            </div>
+            <div>
+                Healthcare Investments
+                Entrepreneur Investments
+                Selected Niches
+                Insights
+            </div>
+            <div>
+                Nachhaltigkeit
+                Medienmitteilungen
+                Adhoc Meldungen
+                Karriere
+            </div>
+            <div>
+                CORPORATE NEWS
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<script>
+    function loadHTML(){
+        fetch('components/dividend.html')
+            .then(response=> response.text())
+            .then(text=> document.getElementById('dividend').innerHTML = text);
+
+
+    fetch('components/sustainability.html')
+        .then(response=> response.text())
+        .then(text=> document.getElementById('sustainability').innerHTML = text);
+    }
+
+    loadHTML();
+</script>
+
+</body>
+</html>
